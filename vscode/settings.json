@@ -1,0 +1,93 @@
+{
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.tree.indent": 20,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.editorLargeFileConfirmation": 100,
+  "workbench.editorAssociations": {
+    "*.jpg": "imagePreview.previewEditor",
+    "*.png": "imagePreview.previewEditor"
+  },
+  "editor.minimap.enabled": false,
+  "window.autoDetectColorScheme": false,
+  "window.zoomLevel": -1,
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "material-icon-theme.folders.associations": {
+    "dataset": "database",
+    "datasets": "database",
+    "thesis": "docs",
+    "proposal": "docs",
+    "job_logs": "log",
+    "evaluation": "review",
+    "experiments": "test",
+    "checkpoints": "dump",
+    "ray": "connection"
+  },
+  "material-icon-theme.files.associations": {
+    "**.sbatch": "console"
+  },
+  "files.associations": {
+    "*.out": "log",
+    "*.err*": "log"
+  },
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[cpp]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "[tex][latex]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false
+  },
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "jupyter.askForKernelRestart": false,
+  "hediet.vscode-drawio.resizeImages": false,
+  "terminal.integrated.scrollback": 2000,
+  "terminal.integrated.persistentSessionScrollback": 200,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
+  "git.autofetch": true,
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.useCurlAndWgetConfigurationFiles": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "remote.SSH.remotePlatform": {
+    "clariden": "linux",
+    "ela": "linux",
+    "euler.ethz.ch": "linux",
+    "student-cluster": "linux",
+    "student-cluster.inf.ethz.ch": "linux",
+    "colombo.informatik.rwth-aachen.de": "linux",
+    "gasperi": "linux",
+    "gasperi.informatik.rwth-aachen.de": "linux",
+    "login23-2.hpc.itc.rwth-aachen.de": "linux",
+    "login23-g-1.hpc.itc.rwth-aachen.de": "linux",
+    "luxemburg.informatik.rwth-aachen.de": "linux",
+    "rompuy.informatik.rwth-aachen.de": "linux",
+    "schulz": "linux",
+    "schulz.informatik.rwth-aachen.de": "linux"
+  },
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "opus",
+  "claudeCode.allowDangerouslySkipPermissions": true,
+  "cursor.composer.queueMessageDefaultBehavior": "steer",
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "scminput"
+  ]
+}
