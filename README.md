@@ -5,7 +5,6 @@ My config files, in git so I don't lose them.
 - `vscode/`: settings, keybindings, extension list
 - `cursor/`: settings, keybindings, extension list
 - `shell/`: `.zshrc`, `.profile`
-- `git/`: `.gitconfig`
 - `agents/`: global `AGENTS.md`, skills and MCP servers, shared by Claude Code, Codex and Antigravity CLI.
 
 ## Setup
@@ -20,7 +19,7 @@ Run from the repo root on a new host:
 Or one part at a time:
 
 ```sh
-./install-shell.sh       # .zshrc, .profile, .gitconfig
+./install-shell.sh       # .zshrc, .profile
 ./install-agents.sh      # AGENTS.md, skills and MCP servers for Claude Code, Codex and Antigravity
 ./install-editors.sh     # VS Code and Cursor settings and keybindings (macOS)
 ./install-extensions.sh  # VS Code and Cursor extensions

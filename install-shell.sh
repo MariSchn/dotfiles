@@ -8,4 +8,3 @@ echo "=== shell ==="
 
 install_path "$repo/shell/.zshrc"   "$HOME/.zshrc"
 install_path "$repo/shell/.profile" "$HOME/.profile"
-install_path "$repo/git/.gitconfig" "$HOME/.gitconfig"
