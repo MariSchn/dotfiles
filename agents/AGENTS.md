@@ -2,7 +2,9 @@
 
 ## Communication
 
-Be concise and direct. Lead with what matters, no filler. Unless I'm learning something (below), never add unrequested explanations. Plain questions get plain, short answers.
+- Be concise and direct. Lead with what matters, no filler.
+- Unless I'm learning something (below), never add unrequested explanations. Plain questions get plain, short answers.
+- When I (not another agent) will review your changes, e.g. in a PR or after a larger edit, propose an order to go through the files or changes that makes it easiest to review.
 
 ### Learning
 
