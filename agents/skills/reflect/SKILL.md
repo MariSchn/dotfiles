@@ -1,11 +1,11 @@
 ---
 name: reflect
-description: End-of-session reflection - review how the session went and suggest changes to the global or project instructions and skills, including removals. Says nothing if nothing is worth changing. Use when the user runs /reflect or asks what to change in their agent setup based on this session.
+description: Reflect on this session, or on many past sessions, and suggest changes to the global or project instructions, skills and settings, including removals. Says nothing if nothing is worth changing. Use when the user runs /reflect or asks what to change in their agent setup based on this session or their past sessions.
 ---
 
 # Reflect on the session
 
-Use this for `/reflect` or `$reflect` at the end of a session. The goal is a better setup, not a list of observations. Saying "Nothing to change." is perfectly acceptable if you believe there is nothing to change.
+Use this for `/reflect` or `$reflect` at the end of a session, or with a scope like `/reflect all` or `/reflect last 30 days` to review past sessions. The goal is a better setup, not a list of observations. Saying "Nothing to change." is perfectly acceptable if you believe there is nothing to change.
 
 ## 1. Gather
 
@@ -16,11 +16,21 @@ Use this for `/reflect` or `$reflect` at the end of a session. The goal is a bet
   - Conflicts: things I said or did that contradict an existing instruction or skill.
   - Ignored rules: existing instructions you broke anyway.
 
+### Past sessions
+
+With a scope beyond this session, also read my settings (`~/.claude/settings.json`) and project memories (`~/.claude/projects/*/memory/`), then:
+
+- Extract what I typed with a Python script: `~/.claude/projects/<project>/<session>.jsonl`, entries with `type: "user"` that are not `isMeta` or `isSidechain` and are not tool results. Folder names start with `-`, which breaks shell tools. Strip `<browser_instruction>`, `<ide_opened_file>`, `<ide_selection>` and `<system-reminder>` blocks. Codex sessions are in `~/.codex/sessions/`.
+- Read all of it, then check patterns against the assistant side: what came right before a correction, a "Continue" or a status question.
+- Also look at usage: context size per turn (`message.usage`), usage-limit hits, tool errors and denials, which skills and connectors were actually used.
+- Count repetition across sessions instead of within one, and report up to ten suggestions instead of three.
+- Delete the extracted files when done; transcripts can contain secrets I pasted.
+
 ## 2. Filter hard
 
 Keep a candidate only if all of these hold:
 
-- It would have prevented a real correction or saved real repeated typing in this session.
+- It would have prevented a real correction or saved real repeated typing in the sessions reviewed.
 - It is likely to come up again in future sessions, not just this task.
 - It is not already covered. If it is covered and you broke it anyway, only suggest a change if the wording was actually unclear; otherwise drop it.
 - It is worth the tokens: every global line is loaded in every session, so prefer tightening an existing line over adding a new one.

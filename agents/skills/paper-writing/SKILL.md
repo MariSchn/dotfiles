@@ -1,11 +1,11 @@
 ---
 name: paper-writing
-description: Write, rewrite or edit sections of a LaTeX paper or technical report - concise, natural academic prose, minimal edits to the user's text, and verified BibTeX. Use when the user asks to draft, polish, restructure or shorten paper or report text, or to add references.
+description: Write, rewrite or edit sections of a LaTeX paper, technical report or thesis meant for submission or publication - concise, natural academic prose, minimal edits to the user's text, and verified BibTeX. Use when the user asks to draft, polish, restructure or shorten such text, or to add references. Not for working notes shared with supervisors or collaborators.
 ---
 
 # Paper writing
 
-Use this for any drafting or editing of a paper, technical report or thesis.
+Use this for drafting or editing a paper, technical report or thesis that will be submitted or published. For working notes (structured notes shared with supervisors, e.g. in Overleaf), don't polish into paper prose: stay terse, use bullets and equations where they help, and keep the existing tone.
 
 ## Before writing
 
@@ -16,7 +16,7 @@ Use this for any drafting or editing of a paper, technical report or thesis.
 ## Style
 
 - Concise: assume space is tight. Cut background the reader of this venue already knows.
-- Natural academic prose. It should read like a careful human author, not AI-generated text: no filler openers, no stacked adjectives, no "delve", "crucial", "seamlessly", "it is worth noting", no em-dash chains, no lists where prose belongs.
+- Natural academic prose. It should read like a careful human author, not AI-generated text: no filler openers, no stacked adjectives, no "delve", "crucial", "seamlessly", "it is worth noting", no em-dashes (`---` or `—`), no lists where prose belongs.
 - Flow: each paragraph links to the previous one and fits the surrounding sections.
 
 ## Editing my text

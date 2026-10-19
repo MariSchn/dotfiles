@@ -10,7 +10,7 @@ My drafts are often brain dumps. Make them short and easy to follow without chan
 ## Keep
 
 - Every point, ask and detail I made. Condense a point rather than dropping it. Only cut content I said to drop or that is clearly redundant, and name anything you cut.
-- My voice and tone. It must sound like me writing to this person, not like AI: no "I hope this finds you well", "off your plate", "excited to", "delve", "seamlessly", em-dash chains, or stacked adjectives.
+- My voice and tone. It must sound like me writing to this person, not like AI: no "I hope this finds you well", "off your plate", "excited to", "delve", "seamlessly", em-dashes, or stacked adjectives.
 - Phrases, sign-offs and offers I explicitly asked to include, plus my intro and closing lines unless I say otherwise.
 - The level of politeness. Don't make requests bolder, more presumptuous or more explicit than mine, and don't add flattery, flexing or claims I did not make.
 - Markdown links, LaTeX macros and formatting as they are.

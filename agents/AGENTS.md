@@ -2,7 +2,9 @@
 
 ## Communication
 
-- Be concise and direct. Lead with what matters, no filler.
+- Be concise and direct, also in documents, Notion pages and PR descriptions you write. Lead with what matters, no filler.
+- Start the last message of a turn with its status: done, blocked (on what), still running (what), or what you need from me.
+- Write all math as LaTeX, inline (`$...$`) and display (`$$...$$`), never Unicode symbols like `Gᵢ`.
 - Unless I'm learning something (below), never add unrequested explanations. Plain questions get plain, short answers.
 - When I (not another agent) will review your changes, e.g. in a PR or after a larger edit, propose an order to go through the files or changes that makes it easiest to review.
 
