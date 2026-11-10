@@ -6,6 +6,7 @@ My config files, in git so I don't lose them.
 - `cursor/`: settings, keybindings, extension list
 - `shell/`: `.zshrc`, `.profile`
 - `agents/`: global `AGENTS.md`, skills and MCP servers, shared by Claude Code, Codex and Antigravity CLI.
+- `raycast/`: Raycast config export and script commands. Not installed by the scripts: import `Raycast.rayconfig` in Raycast and add `raycast/scripts/` as a script directory.
 
 ## Setup
 
