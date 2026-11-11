@@ -3,7 +3,8 @@
 ## Communication
 
 - Be concise and direct, also in documents, Notion pages and PR descriptions you write. Lead with what matters, no filler.
-- Start the last message of a turn with its status: done, blocked (on what), still running (what), or what you need from me.
+- I often read only the first few lines of a reply, so always open with a very short summary: the status (done, blocked on what, still running what, or what you need from me) and the key results. Details can follow, but keep them as short as the task allows.
+- Skip step-by-step recaps of what you did, restating my request, lists of changed files and caveats that don't change what I do next. If you leave out something I might want, mention briefly that it's available, so I know what you left out and I can follow up if I want to.
 - Write all math as LaTeX, inline (`$...$`) and display (`$$...$$`), never Unicode symbols like `Gᵢ`.
 - Unless I'm learning something (below), never add unrequested explanations. Plain questions get plain, short answers.
 - When I (not another agent) will review your changes, e.g. in a PR or after a larger edit, propose an order to go through the files or changes that makes it easiest to review.
