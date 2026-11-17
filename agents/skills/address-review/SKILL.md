@@ -15,9 +15,20 @@ Use this for `/address-review`, `$address-review` or "address my comments", "I r
 
 ## 2. Judge
 
+- Don't accept comments by default. Work out what each one implies (behaviour, scope, other call sites, the PR's intent) and whether it's right. Then pick one: change, partial change, push back or ask.
 - Answer questions directly. A question like "why do we need X?" often means I doubt X. If X isn't justified, say so and propose the simpler version.
 - When a comment flags one instance of a problem (a broken convention, over-checking, an unclear name), fix the other instances in the change too.
 - If a comment is unclear or needs a decision from me, ask instead of guessing.
+
+### Comments from other people
+
+If any comments come from humans other than me (not bots), stop before fixing and give me an overview, so we can walk through the decisions together before you implement anything. Per comment, numbered so I can refer to it:
+
+- **What**: the comment in one line, with author and file:line.
+- **Context**: what the code there does and why the change made it that way.
+- **Plan**: change, partial change, push back or ask, with the reasoning in a sentence or two.
+
+Wait for my go before fixing or replying. My own comments and bot comments don't need this step.
 
 ## 3. Fix
 
