@@ -26,9 +26,9 @@ Or one part at a time:
 ./install-extensions.sh  # VS Code and Cursor extensions
 ```
 
-The install scripts copy files once, so each host can change its copies. Files that already exist and differ are skipped; `--force` overwrites them after moving the old version to `~/.dotfiles-backup/` (`--no-backup` skips that).
+Agent instructions, skills and editor settings are symlinked into this repo, so edits on either side show up in `git diff`. Shell configs are copied once, so each host can change its copies without touching this public repo. Files that already exist and differ are skipped; `--force` overwrites them after moving the old version to `~/.dotfiles-backup/` (`--no-backup` skips that).
 
-`agents/AGENTS.md` is copied to `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md` and `~/.gemini/config/AGENTS.md`, and each skill to `~/.claude/skills/`, `~/.agents/skills/` and `~/.gemini/config/skills/`.
+`agents/AGENTS.md` is linked to `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md` and `~/.gemini/config/AGENTS.md`, and each skill to `~/.claude/skills/`, `~/.agents/skills/` and `~/.gemini/config/skills/`.
 
 `agents/mcp.json` lists local MCP servers in the usual `mcpServers` format. It is copied to `~/.gemini/config/mcp_config.json`, and each server is added to Claude Code (user scope) and Codex with their `mcp add` commands; existing servers with the same name are skipped unless `--force`.
 

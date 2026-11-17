@@ -17,6 +17,6 @@ for editor in vscode cursor; do
     continue
   fi
 
-  install_path "$repo/$editor/settings.json"    "$dir/settings.json"
-  install_path "$repo/$editor/keybindings.json" "$dir/keybindings.json"
+  link_path "$repo/$editor/settings.json"    "$dir/settings.json"
+  link_path "$repo/$editor/keybindings.json" "$dir/keybindings.json"
 done

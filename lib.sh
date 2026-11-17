@@ -65,6 +65,29 @@ install_path() {
   echo "  copied   $dest"
 }
 
+link_path() {
+  local src="$1" dest="$2"
+
+  if [ -L "$dest" ] && [ "$(readlink "$dest")" = "$src" ]; then
+    echo "  ok       $dest"
+    return
+  elif [ -e "$dest" ] && ! same_content "$src" "$dest" && [ "$force" -eq 0 ]; then
+    echo "  skipped  $dest (differs, --force to overwrite)"
+    return
+  elif [ "$dry" -eq 1 ]; then
+    echo "  would link  $dest"
+    return
+  elif [ -L "$dest" ] || { [ -e "$dest" ] && same_content "$src" "$dest"; }; then
+    rm -rf "$dest"
+  elif [ -e "$dest" ]; then
+    backup "$dest"
+  fi
+
+  mkdir -p "$(dirname "$dest")"
+  ln -s "$src" "$dest"
+  echo "  linked   $dest"
+}
+
 real_dir() {
   if links_into_repo "$1"; then
     if [ "$dry" -eq 1 ]; then

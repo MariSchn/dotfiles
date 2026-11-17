@@ -6,9 +6,9 @@ parse_args "$@"
 
 echo "=== agents ==="
 
-install_path "$repo/agents/AGENTS.md" "$HOME/.claude/CLAUDE.md"
-install_path "$repo/agents/AGENTS.md" "$HOME/.codex/AGENTS.md"
-install_path "$repo/agents/AGENTS.md" "$HOME/.gemini/config/AGENTS.md"
+link_path "$repo/agents/AGENTS.md" "$HOME/.claude/CLAUDE.md"
+link_path "$repo/agents/AGENTS.md" "$HOME/.codex/AGENTS.md"
+link_path "$repo/agents/AGENTS.md" "$HOME/.gemini/config/AGENTS.md"
 
 real_dir "$HOME/.agents/skills"
 real_dir "$HOME/.claude/skills"
@@ -16,9 +16,9 @@ real_dir "$HOME/.gemini/config/skills"
 
 for skill in "$repo"/agents/skills/*/; do
   name="$(basename "$skill")"
-  install_path "${skill%/}" "$HOME/.agents/skills/$name"
-  install_path "${skill%/}" "$HOME/.claude/skills/$name"
-  install_path "${skill%/}" "$HOME/.gemini/config/skills/$name"
+  link_path "${skill%/}" "$HOME/.agents/skills/$name"
+  link_path "${skill%/}" "$HOME/.claude/skills/$name"
+  link_path "${skill%/}" "$HOME/.gemini/config/skills/$name"
 done
 
 mcp="$repo/agents/mcp.json"
