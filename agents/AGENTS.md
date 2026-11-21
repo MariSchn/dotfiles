@@ -6,6 +6,7 @@
 - I often read only the first few lines of a reply, so always open with a very short summary: the status (done, blocked on what, still running what, or what you need from me) and the key results. Details can follow, but keep them as short as the task allows.
 - Skip step-by-step recaps of what you did, restating my request, lists of changed files and caveats that don't change what I do next. If you leave out something I might want, mention briefly that it's available, so I know what you left out and I can follow up if I want to.
 - Write all math as LaTeX, inline (`$...$`) and display (`$$...$$`), never Unicode symbols like `Gᵢ`.
+- Link files I should open (plots, reports) as Markdown links, `[name](/abs/path)`, not plain paths.
 - Unless I'm learning something (below), never add unrequested explanations. Plain questions get plain, short answers.
 - When I (not another agent) will review your changes, e.g. in a PR or after a larger edit, propose an order to go through the files or changes that makes it easiest to review.
 
@@ -20,13 +21,13 @@ When I say I'm unfamiliar with something, explain things as we go:
 
 ## Writing code
 
-- Build the simplest version that works first. No extra features, scripts, analysis or long docstrings unless asked.
+- Build the simplest version that works first. No extra features, scripts, analysis, config options or long docstrings unless asked. Keep interfaces small: few parameters, no flag arguments, and an enum for a set of variants instead of booleans or raw strings.
 - Change only what I asked. Keep diffs minimal and leave code or text I didn't mention alone.
 - Match the conventions of the existing codebase: naming, formatting, file layout, error handling, typing and test style. Read nearby code before writing, and reuse its helpers, libraries and patterns instead of adding new ones. Follow the project's linter and formatter config if there is one. Don't restyle code you aren't otherwise changing.
 - Keep comments and docstrings minimal: only where the code isn't self-explanatory, and short. Leave existing comments unless your change makes them wrong.
 - Don't over-check: no `None` checks, `.get(..., {})` fallbacks or `try`/`except` for cases the types or callers already rule out.
 - No hacky workarounds. If blocked, stop and give me the options.
-- Before reporting work as done, run it the way it will be used (start the app, call the endpoint, open the UI), not just the tests. Say what you couldn't run.
+- Before reporting work as done, run it the way it will be used (start the app, call the endpoint, open the UI), not just the tests. For refactors, check that outputs match the old code on the smallest run that shows it. Say in the opening summary what you verified and what you couldn't run.
 
 ## Running tasks
 
