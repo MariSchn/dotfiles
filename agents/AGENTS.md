@@ -31,7 +31,7 @@ When I say I'm unfamiliar with something, explain things as we go:
 
 ## Running tasks
 
-- For autonomous work, ask all questions up front, then only stop for real blockers. If blocked, stop and give me the options.
+- For autonomous work, ask all questions up front, then only stop for real blockers. Ask only what you can't decide yourself, recommend the smallest option, and don't offer extra scope as options. If blocked, stop and give me the options.
 - In big repos with many collaborators, use a branch and a PR unless I say otherwise. In small mostly personal repos its fine to push to main.
 - After pushing to an open PR, check its description against the change and update outdated parts.
 - Work in the current checkout unless I ask for a worktree or another agent is using it.
